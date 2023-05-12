@@ -1,0 +1,18 @@
+void count_sort(){
+    vector<int> arr = {10, 9, 8, 7, 6, 5, 4, 3};
+    int n = arr.size();
+    auto max_ptr = max_element(arr.begin(), arr.end());
+    int max_val = *max_ptr;
+    vector<int>arr2(max_val+1,0);
+    for (int i = 0; i < n; ++i) {
+        arr2[arr[i]]++;
+    }
+    for (int i = 0; i < max_val; i++) {
+        while (arr2[i]>0){
+            cout<<i<<" ";
+            arr2[i]--;
+        }
+    }
+    cout<<endl;
+
+}
