@@ -1,6 +1,0 @@
-void problem_six(int a[], int len) {
-  if(len==0)return;
-
-      fact(a,len-1);
-      a[len]=a[len]+len;
-}
