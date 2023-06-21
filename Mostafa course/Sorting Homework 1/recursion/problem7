@@ -1,0 +1,5 @@
+void fact(int a[], int len) {
+  if(len==1)return;
+  fact(a,len-1);
+  a[len-1]+=a[len-2];
+}
