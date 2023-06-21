@@ -1,0 +1,7 @@
+void fact(int arr[], int len) {
+    if (len == 1)
+        return;
+
+   fact(arr, len - 1);
+    arr[len-1] = max(arr[len-1], arr[len-2]);
+}
